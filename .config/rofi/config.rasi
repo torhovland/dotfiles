@@ -1,1 +1,6 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/rofi/config.rasi
+configuration {
+location: 0;
+theme: "/nix/store/2pc1mx28n6qw7d8b5y6jp28a1rx02li6-rofi-theme";
+xoffset: 0;
+yoffset: 0;
+}

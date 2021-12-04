@@ -1,1 +1,115 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/i3/config
+font pango:monospace 8.000000
+floating_modifier Mod4
+default_border pixel 0
+default_floating_border pixel 2
+hide_edge_borders none
+force_focus_wrapping no
+focus_follows_mouse yes
+focus_on_window_activation smart
+mouse_warping output
+workspace_layout default
+workspace_auto_back_and_forth no
+
+client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50 #5f676a
+client.unfocused #333333 #222222 #888888 #292d2e #222222
+client.urgent #2f343a #900000 #ffffff #900000 #900000
+client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
+client.background #ffffff
+
+
+bindsym Mod4+0 workspace number 10
+bindsym Mod4+1 workspace number 1
+bindsym Mod4+2 workspace number 2
+bindsym Mod4+3 workspace number 3
+bindsym Mod4+4 workspace number 4
+bindsym Mod4+5 workspace number 5
+bindsym Mod4+6 workspace number 6
+bindsym Mod4+7 workspace number 7
+bindsym Mod4+8 workspace number 8
+bindsym Mod4+9 workspace number 9
+bindsym Mod4+Down focus down
+bindsym Mod4+Left focus left
+bindsym Mod4+Return exec /nix/store/lamcg0lfs207fjv6lb2gv2089al6c5yj-alacritty-0.8.0/bin/alacritty
+bindsym Mod4+Right focus right
+bindsym Mod4+Shift+0 move container to workspace number 10
+bindsym Mod4+Shift+1 move container to workspace number 1
+bindsym Mod4+Shift+2 move container to workspace number 2
+bindsym Mod4+Shift+3 move container to workspace number 3
+bindsym Mod4+Shift+4 move container to workspace number 4
+bindsym Mod4+Shift+5 move container to workspace number 5
+bindsym Mod4+Shift+6 move container to workspace number 6
+bindsym Mod4+Shift+7 move container to workspace number 7
+bindsym Mod4+Shift+8 move container to workspace number 8
+bindsym Mod4+Shift+9 move container to workspace number 9
+bindsym Mod4+Shift+Down move down
+bindsym Mod4+Shift+Left move left
+bindsym Mod4+Shift+Right move right
+bindsym Mod4+Shift+Up move up
+bindsym Mod4+Shift+c reload
+bindsym Mod4+Shift+d exec /nix/store/yby7qif5zv5316fl4ap3ql6zldlbkpgm-rofi-1.6.1/bin/rofi -show window
+bindsym Mod4+Shift+e exec i3-nagbar -t warning -m 'Do you want to exit i3?' -b 'Yes' 'i3-msg exit'
+bindsym Mod4+Shift+minus move scratchpad
+bindsym Mod4+Shift+q kill
+bindsym Mod4+Shift+r restart
+bindsym Mod4+Shift+space floating toggle
+bindsym Mod4+Shift+x exec systemctl suspend
+bindsym Mod4+Up focus up
+bindsym Mod4+a focus parent
+bindsym Mod4+b exec /nix/store/09xzqs3yyy1avzdrh3qv0bhznd12v3pp-firefox-94.0.2/bin/firefox
+bindsym Mod4+d exec /nix/store/yby7qif5zv5316fl4ap3ql6zldlbkpgm-rofi-1.6.1/bin/rofi -modi drun -show drun
+bindsym Mod4+e layout toggle split
+bindsym Mod4+f fullscreen toggle
+bindsym Mod4+h split h
+bindsym Mod4+m move workspace to output left
+bindsym Mod4+minus scratchpad show
+bindsym Mod4+r mode resize
+bindsym Mod4+s layout stacking
+bindsym Mod4+space focus mode_toggle
+bindsym Mod4+v split v
+bindsym Mod4+w layout tabbed
+bindsym XF86AudioLowerVolume exec amixer set Master 4%-
+bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer set Master 4%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 4%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 4%+
+
+mode "resize" {
+bindsym Down resize grow height 10 px or 10 ppt
+bindsym Escape mode default
+bindsym Left resize shrink width 10 px or 10 ppt
+bindsym Return mode default
+bindsym Right resize grow width 10 px or 10 ppt
+bindsym Up resize shrink height 10 px or 10 ppt
+}
+
+
+
+gaps inner 15
+gaps outer 5
+
+
+
+
+
+
+
+
+
+
+
+
+exec_always --no-startup-id systemctl --user restart polybar.service
+
+exec_always --no-startup-id /nix/store/n2p917y43lqbp73v8nw7qf9vvqphyf5l-feh-3.7.2/bin/feh --bg-scale ~/background.jpg
+
+exec  sleep 1; exec i3-msg 'workspace 1; exec /nix/store/lamcg0lfs207fjv6lb2gv2089al6c5yj-alacritty-0.8.0/bin/alacritty';
+
+exec  sleep 2; exec i3-msg 'workspace 2; exec /nix/store/09xzqs3yyy1avzdrh3qv0bhznd12v3pp-firefox-94.0.2/bin/firefox';
+
+exec  sleep 3; exec i3-msg 'workspace 3; exec /nix/store/hg516dqh7zvr2h0dla1zjjdwlaxbliva-vscode-1.62.3/bin/code'
+
+workspace "1" output Virtual2
+workspace "2" output Virtual1
+workspace "3" output Virtual1
+

@@ -1,1 +1,13 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/systemd/user/redshift.service
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=/nix/store/80308ggaa4ccsfyf0dayl9cn3vafz048-redshift-1.12/bin/redshift -v -c /home/tor/.config/redshift/redshift.conf
+Restart=on-failure
+RestartSec=3
+
+[Unit]
+After=graphical-session-pre.target
+Description=Redshift colour temperature adjuster
+Documentation=http://jonls.dk/redshift/
+PartOf=graphical-session.target

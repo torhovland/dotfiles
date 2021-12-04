@@ -1,1 +1,5 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/systemd/user/hm-graphical-session.target
+[Unit]
+BindsTo=graphical-session.target
+BindsTo=tray.target
+Description=Home Manager X session
+Requires=graphical-session-pre.target

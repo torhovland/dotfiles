@@ -1,1 +1,12 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/systemd/user/setxkbmap.service
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=/nix/store/hv8qx8hw0sp7y01nmmxi71qdrh27h820-setxkbmap-1.3.2/bin/setxkbmap -layout 'no' -variant '' -option ''
+RemainAfterExit=true
+Type=oneshot
+
+[Unit]
+After=graphical-session-pre.target
+Description=Set up keyboard in X
+PartOf=graphical-session.target

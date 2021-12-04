@@ -1,1 +1,13 @@
-/nix/store/5v4x6n29v9c9c751ml2pnvjwqwv4pngw-home-manager-files/.config/systemd/user/tray.target.wants/polybar.service
+[Install]
+WantedBy=tray.target
+
+[Service]
+Environment=PATH=/nix/store/bra45hn0xxprn1h9w1ccah7hxwjflrgl-polybar-3.5.5/bin:/run/wrappers/bin
+ExecStart=/nix/store/as7bqfm5449qgyspcpn0v14v7mpg3h0q-polybar-start/bin/polybar-start
+Restart=on-failure
+Type=forking
+
+[Unit]
+Description=Polybar status bar
+PartOf=tray.target
+X-Restart-Triggers=/nix/store/5pmp6vfig3qb5bwg8rcgyb6rqzszfs5q-polybar.conf
