@@ -2,11 +2,13 @@
 /.cache
 /.cargo
 /.compose-cache
+/.config/fish/fish_variables
 /.config/spotify/User*
 /.esd_auth
 /.lesshst
 /.local/share
 /.mozilla/firefox
+/.nix-*
 /.pki
 /.ssh
 /.vscode/argv.json
