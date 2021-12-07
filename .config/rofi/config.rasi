@@ -1,6 +1,0 @@
-configuration {
-location: 0;
-theme: "/nix/store/2pc1mx28n6qw7d8b5y6jp28a1rx02li6-rofi-theme";
-xoffset: 0;
-yoffset: 0;
-}

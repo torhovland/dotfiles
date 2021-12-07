@@ -1,0 +1,17 @@
+/*.Chromium.*
+/Backups
+/Cookies*
+/Local*
+/Network*
+/Service*
+/Session*
+/TransportSecurity
+/Quota*
+*Cache*
+*Crash\ Report*
+globalStorage
+languagepacks.json
+machineid
+storage.json
+workspaceStorage
+*.lock

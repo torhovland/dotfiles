@@ -1,3 +1,5 @@
 [user]
 	email = "tor+github@hovland.co"
 	name = "Tor Hovland"
+[cola]
+	spellcheck = false
