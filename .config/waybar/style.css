@@ -4,9 +4,11 @@
     border: none;
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "JetbrainsMono Nerd Font", "Cascadia Code", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-family: "MesloLGS Nerd Font", "Cascadia Code", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
     min-height: 0;
+    padding: 0;
+    margin: 0px;
 }
 
 window#waybar {
@@ -31,11 +33,11 @@ window#waybar.chromium {
 
 /* Workspaces */
 #workspaces button {
-    padding: 10px;
+    padding: 0px 20px;
     background-color: #30374b;
     color: #ffffff;
-    border-radius: 50;
-    margin: 10px 0 10px 10px;
+    border-radius: 25;
+    margin: 4px;
 }
 
 #workspaces button:hover {
@@ -53,7 +55,7 @@ window#waybar.chromium {
 /* Spotify */
 .custom-spotify {
     padding: 10px;
-    margin: 10px 0 10px 15px;
+    margin: 4px;
     background-color: #30374b;
     color: #d6b692;
     font-size: 12px;
@@ -61,8 +63,8 @@ window#waybar.chromium {
 }
 
 #custom-powerctrl {
-	padding: 10px;
-	margin: 10px 10px 10px 5px;
+	padding: 0px 20px;
+        margin: 4px;
 	border-radius: 50;
 	background-color: #30374b;
 	color: #d6b692;
@@ -73,23 +75,23 @@ window#waybar.chromium {
 
 #custom-border-left {
 	background-color: #30374b;
-	padding: 6px;
-	margin: 10px 0 10px 0;
+	padding: 0px 10px;
+        margin: 4px 0px;
 	border-top-left-radius: 50;
 	border-bottom-left-radius: 50;
 }
 
 #custom-border-right {
 	background-color: #30374b;
-	padding: 6px;
-	margin: 10px 10px 10px 0;
+	padding: 0px 10px;
+        margin: 4px 0px;
 	border-top-right-radius: 50;
 	border-bottom-right-radius: 50;
 }
 
 #custom-spacing {
-	padding: 1px;
-	margin: 10px 0 10px 0;
+	padding: 0px;
+        margin: 4px 0px;
 	background-color: #30374b;
 }
 
@@ -113,14 +115,14 @@ window#waybar.chromium {
 #keyboard-state
 {
     padding: 10px;
-    margin: 10px 0 10px 0;
+    margin: 4px 0px;
     color: #ffffff;
     background-color: #30374b;
 }
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

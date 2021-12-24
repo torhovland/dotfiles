@@ -4,11 +4,11 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 4, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "custom/spotify"],
     // "modules-center": ["sway/window"],
-    "modules-right": ["custom/border-left", "network", "pulseaudio", "backlight", "battery", "battery#bat2", "clock", "tray", "custom/border-right", "custom/powerctrl"],
+    "modules-right": ["custom/border-left", "cpu", "memory", "network", "pulseaudio", "battery", "battery#bat2", "clock", "tray", "custom/border-right", "custom/powerctrl"],
     
     // Workspaces
     "sway/workspaces": {
@@ -16,11 +16,12 @@
          "all-outputs": true,
          "format": "{icon}",
          "format-icons": {
-             "1": "1: ",
-             "2": "2: ",
-             "3": "3: ",
-             "4": "4: ",
+             "1": "1: ",
+             "2": "2: ",
+             "3": "3: ",
+             "4": "4: ",
              "5": "5: ",
+             "6": "6: ",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -92,7 +93,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%I:%M %p}"
+        "format": " {:%H:%M}"
     },
     
     // Power Control

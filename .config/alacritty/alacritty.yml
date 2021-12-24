@@ -27,7 +27,7 @@
         },
       "primary": { "background": "0x000000", "foreground": "0xEBEBEB" },
     },
-  "font": { "normal": { "family": "JetbrainsMono Nerd Font" }, "size": 12 },
+  "font": { "normal": { "family": "MesloLGS Nerd Font" }, "size": 12 },
   "shell":
     {
       "program": "fish",

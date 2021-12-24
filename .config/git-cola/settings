@@ -9,9 +9,9 @@
             "y": 20
         },
         "messagebox": {
-            "geometry": "AdnQywADAAAAAAN7AAAAFAAABkoAAAC2AAADewAAABQAAAZKAAAAtgAAAAAAAAAACgAAAAN7AAAAFAAABkoAAAC2",
+            "geometry": "AdnQywADAAAAAAN7AAAAFAAABkoAAAC3AAADewAAABQAAAZKAAAAtwAAAAAAAAAACgAAAAN7AAAAFAAABkoAAAC3",
             "width": 720,
-            "height": 163,
+            "height": 164,
             "x": 891,
             "y": 20
         },
@@ -23,6 +23,13 @@
             "y": 20,
             "prompt": true,
             "tags": false
+        },
+        "preferencesview": {
+            "geometry": "AdnQywADAAAAAAO+AAABqgAABhUAAANfAAADvgAAAaoAAAYVAAADXwAAAAAAAAAACgAAAAO+AAABqgAABhUAAANf",
+            "width": 600,
+            "height": 438,
+            "x": 958,
+            "y": 426
         }
     },
     "recent": [],

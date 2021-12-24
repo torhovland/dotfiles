@@ -3,3 +3,14 @@
 	name = "Tor Hovland"
 [cola]
 	spellcheck = false
+	fontdiff = MesloLGM Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+	expandtab = true
+	theme = flat-light-blue
+	icontheme = dark
+	statusshowtotals = true
+	statusindent = true
+	savewindowsettings = false
+[gui]
+	editor = nano
+[merge]
+	tool = xxdiff
