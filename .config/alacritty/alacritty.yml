@@ -1,41 +1,40 @@
-{
-  "background_opacity": 0.5,
-  "colors":
-    {
-      "bright":
-        {
-          "black": "0x6D7070",
-          "blue": "0x1BA6FA",
-          "cyan": "0x73FBF1",
-          "green": "0xB8E466",
-          "magenta": "0xB978EA",
-          "red": "0xFF4352",
-          "white": "0xFEFEF8",
-          "yellow": "0xFFD750",
-        },
-      "cursor": { "cursor": "0xFF261E", "text": "0xFF261E" },
-      "normal":
-        {
-          "black": "0x0D0D0D",
-          "blue": "0x178AD1",
-          "cyan": "0x21DEEF",
-          "green": "0xA0E521",
-          "magenta": "0x9f7df5",
-          "red": "0xFF301B",
-          "white": "0xEBEBEB",
-          "yellow": "0xFFC620",
-        },
-      "primary": { "background": "0x000000", "foreground": "0xEBEBEB" },
-    },
-  "font": { "normal": { "family": "MesloLGS Nerd Font" }, "size": 12 },
-  "shell":
-    {
-      "program": "fish",
-    },
-  "window":
-    {
-      "dimensions": { "columns": 100, "lines": 75 },
-      "padding": { "y": 5 },
-      "title": "Terminal",
-    },
-}
+background_opacity: 0.5
+colors:
+  bright:
+    black: '0x6D7070'
+    blue: '0x1BA6FA'
+    cyan: '0x73FBF1'
+    green: '0xB8E466'
+    magenta: '0xB978EA'
+    red: '0xFF4352'
+    white: '0xFEFEF8'
+    yellow: '0xFFD750'
+  cursor:
+    cursor: '0xFF261E'
+    text: '0xFFFFFF'
+  normal:
+    black: '0x0D0D0D'
+    blue: '0x178AD1'
+    cyan: '0x21DEEF'
+    green: '0xA0E521'
+    magenta: '0x9f7df5'
+    red: '0xFF301B'
+    white: '0xEBEBEB'
+    yellow: '0xFFC620'
+  primary:
+    background: '0x000000'
+    foreground: '0xEBEBEB'
+font:
+  normal:
+    family: MesloLGS Nerd Font
+  size: 12
+shell:
+  program: fish
+window:
+  dimensions:
+    columns: 100
+    lines: 75
+  padding:
+    y: 5
+  title: Terminal
+

@@ -18,9 +18,12 @@
 /.config/Code*/*.lock
 /.config/Code*/**/*Cache*
 /.config/Code*/**/*Storage*
+/.config/git-cola/settings
+/.config/lazygit/state.yml
 /.config/spotify/User*
 /.config/spotify*/*token*.json
 /.config/spotify*/client.yml
+/.config/QtProject.conf
 /.esd_auth
 /.gnupg
 /.lesshst
@@ -31,6 +34,7 @@
 /.rustup/toolchains
 /.rustup/update-hashes
 /.ssh
+/.viminfo
 /.vscode*/argv.json
 /.vscode*/extensions
 /.Xauthority
@@ -42,3 +46,5 @@ generated*
 *-errors
 *-errors.old
 logs
+screenshots
+

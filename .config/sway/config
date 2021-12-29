@@ -5,7 +5,7 @@ exec mako --default-timeout 5000
 output * bg ~/wallpaper.png fill
 
 ## Font
-font pango:Cascadia Code 10
+font pango:MesloLGS Nerd Font 10
 
 ## gaps & border
 gaps inner 8
@@ -93,7 +93,7 @@ output DP-1 pos 2560 0
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will >
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway?'
 #
 # Moving around:
 #
@@ -212,6 +212,12 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Take a screenshot with all output and save it into screenshots
+bindsym Print exec grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+
+# Take a Screenshot with the region select
+bindsym $mod+Print exec grim -g "$(slurp)" ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+
 #
 # Status Bar:
 #
@@ -228,13 +234,15 @@ workspace_auto_back_and_forth no
 
 bindsym $mod+m move workspace to output left
 
+bindsym $mod+p exec clipman pick -t wofi
+
 workspace "1" output DVI-D-1
 workspace "2" output DP-1
 workspace "3" output DVI-D-1
 workspace "4" output DP-1
 workspace "6" output DP-1
 
-assign [app_id="alacritty"] 1
+assign [app_id="Alacritty"] 1
 assign [app_id="firefox"] 2
 assign [app_id="Code"] 3
 assign [app_id="Code - Insiders"] 3
@@ -242,8 +250,10 @@ assign [app_id="python3"] 4
 assign [app_id="spotify"] 6
 
 exec swayidle
+exec wl-paste -t text --watch clipman store
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec alacritty
 exec firefox
-exec code-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland
-exec git-cola
-exec alacritty --class spotify -e spt
+#exec code-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland
+#exec git-cola
+#exec alacritty --class spotify -e spt
