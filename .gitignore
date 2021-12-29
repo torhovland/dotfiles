@@ -48,3 +48,5 @@ generated*
 logs
 screenshots
 
+
+.config/fish/fish_variables
