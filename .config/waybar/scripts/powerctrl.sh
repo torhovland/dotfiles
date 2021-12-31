@@ -18,6 +18,9 @@ EOF
     "Sleep")
         systemctl suspend
         ;;
+    "Hibernate")
+        systemctl hibernate
+        ;;
     "Lock")
         loginctl lock-session
         ;;

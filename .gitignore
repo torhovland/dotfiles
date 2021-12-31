@@ -50,3 +50,6 @@ screenshots
 
 
 .config/fish/fish_variables
+.config/Code/watcherServiceParcelSharedProcess
+.zoom/data
+.z
