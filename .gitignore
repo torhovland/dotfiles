@@ -2,6 +2,7 @@
 /.cache
 /.cargo
 /.compose-cache
+/.config/chromium
 /.config/Code*/Backups
 /.config/Code*/Cookies*
 /.config/Code*/*Crash*
@@ -18,6 +19,7 @@
 /.config/Code*/*.lock
 /.config/Code*/**/*Cache*
 /.config/Code*/**/*Storage*
+/.config/Cypress
 /.config/git-cola/settings
 /.config/lazygit/state.yml
 /.config/spotify/User*
@@ -47,9 +49,20 @@ generated*
 *-errors.old
 logs
 screenshots
-
-
-.config/fish/fish_variables
-.config/Code/watcherServiceParcelSharedProcess
+fish_variables
+watcherServiceParcelSharedProcess
 .zoom/data
 .z
+Cache
+Code Cache
+Microsoft Teams
+_cacache
+_logs
+_npx
+Desktop
+Documents
+Downloads
+Games
+Pictures
+.npm
+

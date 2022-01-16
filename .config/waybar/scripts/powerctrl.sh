@@ -5,15 +5,16 @@ case $(wofi -d -L 6 -l 3 -W 100 -x -100 -y 10 \
     Reboot
     Log off
     Sleep
+    Hibernate
     Lock
     Cancel
 EOF
 ) in
     "Shutdown")
-        systemctl poweroff
+        shutdown
         ;;
     "Reboot")
-        systemctl reboot
+        reboot
         ;;
     "Sleep")
         systemctl suspend

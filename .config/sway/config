@@ -66,8 +66,9 @@ input "type:keyboard" {
     repeat_rate 50
 }
 
-output DVI-D-1 pos 0 0
+#output DVI-D-1 pos 0 0
 output DP-1 pos 2560 0
+output HDMI-A-1 mode --custom 2560x1440@50Hz pos 0 0
 
 ### Key bindings
 #
@@ -213,10 +214,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Take a screenshot with all output and save it into screenshots
-bindsym Print exec grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym Print exec grim - | swappy -f -
 
 # Take a Screenshot with the region select
-bindsym $mod+Print exec grim -g "$(slurp)" ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym $mod+Print exec grim -g "$(slurp)" - | swappy -f -
 
 #
 # Status Bar:
@@ -236,11 +237,11 @@ bindsym $mod+m move workspace to output left
 
 bindsym $mod+p exec clipman pick -t wofi
 
-workspace "1" output DVI-D-1
-workspace "2" output DP-1
-workspace "3" output DVI-D-1
-workspace "4" output DP-1
-workspace "6" output DP-1
+#workspace "1" output DVI-D-1
+#workspace "2" output DP-1
+#workspace "3" output DVI-D-1
+#workspace "4" output DP-1
+#workspace "6" output DP-1
 
 assign [app_id="Alacritty"] 1
 assign [app_id="firefox"] 2
