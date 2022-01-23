@@ -5,6 +5,7 @@ case $(wofi -d -L 6 -l 3 -W 100 -x -100 -y 10 \
     Reboot
     Log off
     Sleep
+    Hibernate
     Lock
     Cancel
 EOF
@@ -16,7 +17,10 @@ EOF
         systemctl reboot
         ;;
     "Sleep")
-        systemctl suspend
+        systemctl suspend -i
+        ;;
+    "Hibernate")
+        systemctl hibernate -i
         ;;
     "Lock")
         loginctl lock-session
