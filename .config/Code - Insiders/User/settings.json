@@ -2,5 +2,6 @@
     "window.zoomLevel": 2,
     "workbench.colorTheme": "Default Dark+",
     "editor.fontFamily": "'JetBrainsMono Nerd Font','MesloLGS Nerd Font','Droid Sans Mono', 'monospace', monospace",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "security.workspace.trust.untrustedFiles": "newWindow"
 }

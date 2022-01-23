@@ -11,16 +11,19 @@ case $(wofi -d -L 6 -l 3 -W 100 -x -100 -y 10 \
 EOF
 ) in
     "Shutdown")
-        systemctl poweroff
+        shutdown
         ;;
     "Reboot")
-        systemctl reboot
+        reboot
         ;;
     "Sleep")
         systemctl suspend -i
         ;;
     "Hibernate")
         systemctl hibernate -i
+        ;;
+    "Hibernate")
+        systemctl hibernate
         ;;
     "Lock")
         loginctl lock-session

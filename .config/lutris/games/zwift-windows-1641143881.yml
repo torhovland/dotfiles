@@ -1,0 +1,8 @@
+game:
+  arch: win64
+  args: ZwiftLauncher.exe ZwiftApp.exe
+  exe: /home/tor/Games/zwift/RunFromProcess-x64.exe
+  prefix: /home/tor/Games/zwift
+  working_dir: /home/tor/Games/zwift/drive_c/Program Files (x86)/Zwift
+wine:
+  version: lutris-fshack-6.21-6-x86_64

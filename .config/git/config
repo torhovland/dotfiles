@@ -10,6 +10,7 @@
 	statusshowtotals = true
 	statusindent = true
 	savewindowsettings = false
+	startupmode = folder
 [gui]
 	editor = nano
 [merge]
