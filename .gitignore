@@ -26,15 +26,20 @@
 /.config/spotify*/*token*.json
 /.config/spotify*/client.yml
 /.config/QtProject.conf
+/.config/teams
+/.config/vlc
+/.dropbox
 /.esd_auth
 /.gnupg
 /.lesshst
 /.local/share
+/.local/state/pipewire
 /.mozilla/firefox
 /.nix-*
 /.pki
 /.rustup/toolchains
 /.rustup/update-hashes
+/.shiv
 /.ssh
 /.viminfo
 /.vscode*/argv.json
@@ -62,7 +67,11 @@ _npx
 Desktop
 Documents
 Downloads
+Dropbox*
 Games
 Pictures
 .npm
+GPUCache
+libreoffice
+solaar
 
