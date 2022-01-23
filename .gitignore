@@ -44,6 +44,7 @@
 /.viminfo
 /.vscode*/argv.json
 /.vscode*/extensions
+/.wget-hsts
 /.Xauthority
 /cache_directory
 /go
