@@ -19,6 +19,7 @@
 /.config/Code*/*.lock
 /.config/Code*/**/*Cache*
 /.config/Code*/**/*Storage*
+/.config/copyq
 /.config/Cypress
 /.config/git-cola/settings
 /.config/lazygit/state.yml
@@ -29,6 +30,7 @@
 /.config/teams
 /.config/vlc
 /.dropbox
+/.dropbox-dist
 /.esd_auth
 /.gnupg
 /.lesshst
