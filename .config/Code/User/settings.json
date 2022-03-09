@@ -5,5 +5,5 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 2
 }
