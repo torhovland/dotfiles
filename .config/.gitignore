@@ -1,5 +1,6 @@
 /dconf/user
 /fish/fishd.tmp.*
+/lazygit/state.yml
 /pulse
 /spotify/prefs
 /chromium
