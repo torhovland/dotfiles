@@ -44,7 +44,7 @@ key = "x"
 
 [[keybind]]
 command = "Execute"
-value = "slock"
+value = "xlock"
 modifier = ["modkey", "Control"]
 key = "l"
 
@@ -266,7 +266,7 @@ key = "XF86XK_AudioLowerVolume"
 
 [[keybind]]
 command = "Execute"
-value = "pactl set-sink-mute 0 toggle"
+value = "amixer set Master toggle"
 modifier = []
 key = "XF86XK_AudioMute"
 
