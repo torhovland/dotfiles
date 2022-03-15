@@ -19,6 +19,7 @@
 /.segmentor/access-token
 /.shiv
 /.ssh
+/.vim/plugged
 /.viminfo
 /.vscode*/argv.json
 /.vscode*/extensions
