@@ -1,3 +1,4 @@
 {
- "default.profile.alsa_card.usb-046d_0990_73C9251E-02": { "name": "pro-audio" }
+ "default.profile.alsa_card.usb-046d_0990_73C9251E-02": { "name": "pro-audio" },
+ "default.profile.alsa_card.usb-046d_HD_Pro_Webcam_C920-02": { "name": "input:iec958-stereo" }
 }
