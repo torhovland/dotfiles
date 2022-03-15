@@ -2,33 +2,6 @@
 /.cache
 /.cargo
 /.compose-cache
-/.config/chromium
-/.config/Code*/Backups
-/.config/Code*/Cookies*
-/.config/Code*/*Crash*
-/.config/Code*/databases
-/.config/Code*/Dictionaries
-/.config/Code*/machineid
-/.config/Code*/*Persistent*
-/.config/Code*/Preferences
-/.config/Code*/Quota*
-/.config/Code*/storage.json
-/.config/Code*/*Watcher
-/.config/Code*/*Worker
-/.config/Code*/*Security
-/.config/Code*/*.lock
-/.config/Code*/**/*Cache*
-/.config/Code*/**/*Storage*
-/.config/copyq
-/.config/Cypress
-/.config/git-cola/settings
-/.config/lazygit/state.yml
-/.config/spotify/User*
-/.config/spotify*/*token*.json
-/.config/spotify*/client.yml
-/.config/QtProject.conf
-/.config/teams
-/.config/vlc
 /.dropbox
 /.dropbox-dist
 /.esd_auth
@@ -38,9 +11,12 @@
 /.local/state/pipewire
 /.mozilla/firefox
 /.nix-*
+/.pgadmin*
 /.pki
+/.psql_history
 /.rustup/toolchains
 /.rustup/update-hashes
+/.segmentor/access-token
 /.shiv
 /.ssh
 /.viminfo
@@ -52,6 +28,9 @@
 /go
 /projects
 /spotify-pw
+.npm
+.zoom/data
+.z
 generated*
 *-errors
 *-errors.old
@@ -59,8 +38,6 @@ logs
 screenshots
 fish_variables
 watcherServiceParcelSharedProcess
-.zoom/data
-.z
 Cache
 Code Cache
 Microsoft Teams
@@ -72,9 +49,8 @@ Documents
 Downloads
 Dropbox*
 Games
-Pictures
-.npm
 GPUCache
 libreoffice
+pgadmin.log
+Pictures
 solaar
-
