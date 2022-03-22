@@ -23,7 +23,7 @@ echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
 
 #set background
 if [ -x "$(command -v feh)" ]; then
-  feh --bg-scale "${SCRIPTPATH}/background.jpg"
+  feh --bg-scale "/home/tor/wallpaper.png"
 fi
 
 #make sure all fonts needed are installed

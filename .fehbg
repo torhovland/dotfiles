@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/tor/.config/leftwm/themes/Forest/background.jpg' 
+feh --no-fehbg --bg-scale '/home/tor/wallpaper.png' 
